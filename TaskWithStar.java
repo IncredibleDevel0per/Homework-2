@@ -4,7 +4,7 @@ public class TaskWithStar {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");
-        int number = sc.nextInt();
+        int number = sc.hasNextInt() ? sc.nextInt() : -1;
 
         if (number < 0) {
             System.out.println("Enetered uncorrect number");
@@ -20,6 +20,7 @@ public class TaskWithStar {
         System.out.println(Answer);
     }
 }
+
 
 
 
